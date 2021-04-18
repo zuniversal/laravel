@@ -13,6 +13,7 @@ use Illuminate\Foundation\Inspiring;
 |
 */
 
+// 2-4 php artisan inspire
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');

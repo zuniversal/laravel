@@ -16,3 +16,11 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// 2-4
+Route::get('/test', function () {
+    return [
+        'name' => 'zyb',
+    ];
+});
+
