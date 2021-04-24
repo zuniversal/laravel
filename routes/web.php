@@ -57,3 +57,7 @@ Route::get('/test/default/{user}', function ($user) {
     return $user;
 });
 
+// php artisan ui vue --auth 自动生成该路由
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
